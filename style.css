@@ -1,0 +1,107 @@
+/* Animation for fading slides */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Base */
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    padding-top: 16px;
+    font-family: "Montserrat", arial, sans-serif;
+    font-size: 100%;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .slider-container {
+    padding: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 30rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  .slider-list {
+    display: flex;
+    align-items: center;
+    height: 15.625rem;
+  }
+  
+  .slider-slide img {
+    max-width: 100%;
+  }
+  
+  .slider-slide-hidden {
+    display: none;
+  }
+  
+  .slider-slide-active {
+    display: block;
+    animation: fadeIn 0.85s ease-in-out;
+  }
+  
+  .slider-controlls {
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+    /* Clearfix for floated items */
+  }
+
+  .slider-controlls:before, .slider-controlls:after {
+    content: "";
+    display: table;
+  }
+  .slider-controlls:after {
+    clear: both;
+  }
+  .slider-controlls .controlls-list li {
+    list-style-type: none;
+  }
+  .slider-controlls .controlls-list li:first-of-type {
+    float: left;
+  }
+  .slider-controlls .controlls-list li:last-of-type {
+    float: right;
+  }
+  .slider-controlls a {
+    padding: 8px 15px;
+    color: #233142;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+  }
+  .slider-controlls a:focus, .slider-controlls a:hover {
+    color: #4f6f95;
+  }
+
+  .controlls-dots{
+    width: 33%;
+    display: block;
+    margin: auto;
+  }
+
+  .controlls-dots li{
+    display: block;
+    padding: 0;
+    margin: auto;
+    float: left;
+  }
+
+  .controlls-dots li a{
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .bordered{
+    border: 1px dotted green;
+  }

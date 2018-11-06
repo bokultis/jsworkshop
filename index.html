@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mini Slider</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-- Slider container -->
+  <div class="slider-container">
+      <!-- Slider list -->
+      <ul class="slider-list">
+        <li class="slider-slide slider-slide-active"><img src="https://source.unsplash.com/0Y1qUg1w2bs/480x250" alt="" /></li>
+        <li class="slider-slide slider-slide-hidden"><img src="https://source.unsplash.com/njmy_QrNZXw/480x250" alt="" /></li>
+        <li class="slider-slide slider-slide-hidden"><img src="https://source.unsplash.com/xHNfDgeyIPw/480x250" alt="" /></li>
+        <li class="slider-slide slider-slide-hidden"><img src="https://source.unsplash.com/N5Zxp9RShKA/480x250" alt="" /></li>
+      </ul><!-- .end Slider list -->
+    
+      <!-- Slider controls -->
+      <div class="slider-controlls">
+        <ul class="controlls-list">
+          <li><a href="#" class="js-slider-left slider-control control-left"><i class="fa fa-caret-left"></i></a></li>
+    
+          <li><a href="#" class="js-slider-right slider-control control-right"><i class="fa fa-caret-right"></i></a></li>
+        </ul>
+
+        <ul class="controlls-dots">
+          
+        </ul>
+      </div><!-- .end Slider controls -->
+    </div><!-- .end Slider container -->
+    
+    <!--script type="text/javascript" src="script.js"></script-->
+    <script type="text/javascript" src="srcc.js"></script>
+
+<script type="text/javascript">
+
+    let slider = new Slider({
+      selector: ".slider-list",
+      delay: 7000
+    });
+</script>
+  </body>
+  </html>
