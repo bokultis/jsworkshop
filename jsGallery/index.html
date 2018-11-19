@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>JsGallery</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="gallery-controlls"> 
+        </ul>
+        <ul class="gallery">
+            <li data-title="Gallery Number One">
+                <ul class="image-section section-active">
+                    <li><img src="https://source.unsplash.com/0Y1qUg1w2bs/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/EyER7qtBKZM/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/-u4ddXsjULQ/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/zDSVz1TfHVw/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/g8OgQYKT9e4/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/opFPVxMRpP8/480x250" /></li>
+                </ul>
+            </li>
+            <li  data-title="Gallery Number Two">
+                <ul class="image-section section-hidden">
+                    <li><img src="https://source.unsplash.com/VuBzplNNi0k/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/z0FbhQhpimI/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/CcdkmasVFqw/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/o1XbFsqfC-g/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/1FCPUjGNIAs/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/JJit4tolYUQ/480x250" /></li>
+                </ul>
+            </li>
+            <li  data-title="Gallery Number Three">
+                <ul class="image-section section-hidden">
+                    <li><img src="https://source.unsplash.com/kMpbE_-jCeI/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/A-uhljy3W4I/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/_aQ-61m_Ldo/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/JOoygXv08NU/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/CIYt1FnKFo8/480x250" /></li>
+                    <li><img src="https://source.unsplash.com/x3jO4Aucobk/480x250" /></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="slider">
+        </ul>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        let gallery = new jsGallery({
+            selector:".gallery",
+            sliding: true
+        });
+    </script>
+</body>
+
+</html>

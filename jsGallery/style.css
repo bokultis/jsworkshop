@@ -1,0 +1,66 @@
+html, body{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    border: 1px red solid;
+}
+
+.container ul{
+    list-style: none;
+    height: 50%;
+    width: 100%;
+    margin: 20px 0 0 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.container li{
+    float: left;
+    margin: 5px;
+}
+
+/* The animation code */
+@keyframes fadeIn {
+    0%   {opacity: 0.0;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 1.0;}
+}
+
+.gallery-controlls{
+    z-index: 1;
+}
+
+.section-active{
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.section-hidden{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.gallery{
+    opacity: 1;
+    display: block;
+    z-index: 3;
+}
+
+.slider{
+    opacity: 1;
+    display: none;
+    z-index: 2;
+}
+
+.slider-image-active{
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.slider-image-hidden{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
